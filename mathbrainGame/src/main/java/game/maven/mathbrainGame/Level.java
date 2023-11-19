@@ -1,8 +1,8 @@
 package game.maven.mathbrainGame;
 
-import game.maven.mathbrain.Player;
+import java.util.*;
 
-public class Level {
+public class Level extends Player{
 	protected int level = 1;
 	protected Player player;
 	protected boolean active = true;
@@ -20,6 +20,8 @@ public class Level {
 		if(!player.dead() && getOneGoodAnswer(response)) {
 			level += 1;
 		}
+		updateLevel(level);
+		System.out.println("Your level is: " + level);
 	}
 	
 	public boolean getOneGoodAnswer(boolean[] response) {
@@ -36,5 +38,10 @@ public class Level {
 			return true;
 		return false;
 	}
+	
+	public void updateLevel(int newScore) {
+		this.level = newScore;
+	}
 }
+
 

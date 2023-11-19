@@ -1,10 +1,20 @@
 package game.maven.mathbrainGame;
 
+
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
+import game.maven.mathbrainGame.LogicOfGame;
 
+
+public class MathBrain {
+	public static void main(String args[]) {
+		LogicOfGame init = new LogicOfGame();
+		init.beginning();
+	}
+}
+/***
 public class MathBrain extends Application {
 	@Override
 	public void start(Stage primaryStage) {
@@ -22,4 +32,4 @@ public class MathBrain extends Application {
     public static void main(String[] args) {
         launch(args);
     }
-}
+}***/

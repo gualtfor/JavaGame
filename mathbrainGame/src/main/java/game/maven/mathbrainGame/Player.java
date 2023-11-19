@@ -1,5 +1,6 @@
 package game.maven.mathbrainGame;
 
+
 import java.util.*;
 
 public class Player {
@@ -34,6 +35,7 @@ public class Player {
 					if(answers[i]) {
 						score += 3;
 					}
+					break;
 				case 4:
 				case 5:
 				case 6:
@@ -41,14 +43,16 @@ public class Player {
 					if(answers[i]) {
 						score += 4;
 					}
+					break;
 				case 8:
 				case 9:
 				case 10:
 					if(answers[i]) {
 						score += 5;
 					}
+					break;
 			}
 		}
+		System.out.println("the score is: " + score);
 	}
 }
-
