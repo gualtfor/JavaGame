@@ -7,6 +7,11 @@ import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 import game.maven.mathbrainGame.LogicOfGame;
 
+// Clase donde se realiza el llamado del juego 
+
+/**
+ * Clase que contiene la interfaz del juego
+ */
 
 public class MathBrain {
 	public static void main(String args[]) {
